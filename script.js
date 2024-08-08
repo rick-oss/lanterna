@@ -47,7 +47,10 @@ function moverLanterna(event) {
 let caminhoDasImagens = [
     'imagens/fnaf.jpg',
     'imagens/paisagem.jpg',
-    'imagens/navios.jpg'
+    'imagens/navios.jpg',
+    'imagens/corredor.jpg',
+    'imagens/corredor2.jpg',
+    'imagens/corredor3.jpeg'
 ];
 
 //Escolhe aleatoriamente um caminho
