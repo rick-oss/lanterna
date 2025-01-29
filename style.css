@@ -1,51 +1,49 @@
 /* Estilizaçao global */
 * {
-    margin: 0;
-    padding: 0;
-    font: bold 80pt arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: bold 80pt arial;
 }
 
 /* Estiliza todas as divs */
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    cursor: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  cursor: none;
 }
 
 /* Estiliza a imagem de background da página*/
-.background {
-    width: 100%;
-    max-height: 100%;
-}
-
 .background img {
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 /* Estiliza o layout e visual da lanterna */
 .lanterna {
-    background: rgba(0, 0, 0, 0.99);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-/* Estiliza o layout da mensagem de tecla */
-.lanterna .msg {
-    display: flex;
-    align-items: start;
-    max-height: 100%;
+  background: rgba(0, 0, 0, 0.99);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* Estiliza tamanho e aparencia da mensagem de tecla */
-.msg p {
-    font-size: 18px;
-    font-style: oblique;
-    padding-top: 100px;
+.lanterna .msg {
+  position: fixed;
+  font-size: 18px;
+  top: 100px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .lanterna .msg {
+    font-size: 16px;
+    top: 50%;
+  }
 }
